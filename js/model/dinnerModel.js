@@ -3,46 +3,62 @@ var DinnerModel = function() {
  
 	//TODO Lab 2 implement the data structure that will hold number of guest
 	// and selected dinner options for dinner menu
-
+	var numGuests = 2;
+	var menu = [];
+	var ingredients = [];
 
 	this.setNumberOfGuests = function(num) {
-		//TODO Lab 2
+		numGuests = num;
 	}
 
-	// should return 
+	// should return
 	this.getNumberOfGuests = function() {
-		//TODO Lab 2
+		return numGuests;	
 	}
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		//TODO Lab 2
+		for (var i = 0; i < menu.length; i++){
+			if(menu.type[i] = type){
+				return menu[i];
+			}
+		}	
 	}
 
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
-		//TODO Lab 2
+		return menu; 
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		//TODO Lab 2
+		for (var i = 0; i < menu.length; i++){
+			for (var j =0; j < menu[i].ingredients.length, j++)
+				ingredients.push(menu[i].ingredients[j])			
+		}
+		return indgredients;
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
-		//TODO Lab 2
+		var totPrice = 0;
+		this.getAllIngredients();
+		for (var i = 0; i < ingredients.length, i++){
+			totPrice = totPrice + ingredients[i].price * numGuests
+		}
+		return totPrice
+		
 	}
 
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-		//TODO Lab 2 
+		//TODO Lab 2
 	}
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
-		//TODO Lab 2
+		menu.pop(dishes[id]);
 	}
 
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
@@ -85,7 +101,7 @@ var DinnerModel = function() {
 	// defining the unit i.e. "g", "slices", "ml". Unit
 	// can sometimes be empty like in the example of eggs where
 	// you just say "5 eggs" and not "5 pieces of eggs" or anything else.
-	
+
 	var dishes = [{
 		'id':1,
 		'name':'French toast',
