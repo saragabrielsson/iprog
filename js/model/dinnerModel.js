@@ -59,6 +59,7 @@ var DinnerModel = function() {
 				menu.pop(menu[i]);				
 			}
 		menu.push(dishes[id]);
+		}
 	}
 
 	//Removes dish from menu
