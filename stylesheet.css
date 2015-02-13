@@ -1,0 +1,23 @@
+
+
+nav {
+    opacity: 0.8;
+}
+
+body {
+	padding-top: 100px;
+	font-family: Arial, Sans-serif;
+}
+
+h1 {
+	font-family: Serif;
+}
+
+#frontpage {
+   background-image: url("images/vegetables.jpg");
+}
+
+#j1 {
+    opacity: 0.8;
+}
+
