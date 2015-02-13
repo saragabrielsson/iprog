@@ -18,7 +18,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="#">HOMELETTE</a>
+          <a class="navbar-brand" href="index_p1.html">HOMELETTE</a>
           <p class="navbar-text"><i>From the best chefs in the world directly into your kitchen</i></p>        
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -34,26 +34,33 @@
   <!--  <div class="jumbotron"> -->
           <h3>My dinner</h3>
           <div id="exampleView">
-            <div class="row">
-              People: <span id="numberOfGuests">3</span>
-
-              <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-              <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-            </div>
+            People: 
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+           
           </div>
           <br>
           <div class="panel panel-default">
           <!-- Default panel contents -->
-          <div class="panel-heading">Panel heading</div>
+          <div class="panel-heading">Dish Name<p class="pull-right">Cost</p></div>            
             <!-- Table -->
             <table class="table">
-              <p>Dish Name</p>
-              <p>Pending</p>
+                  <tr>
+                    <td>Pending</td>
+                    <td></td>
+                    <td class='pull-right'>0.00</td>
+                  </tr>                 
             </table>
+            <hr> 
+            <div class='pull-right' style='padding-right:7px'>SEK 0.00</div><br>
           </div>
           <br>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Confirm dinner</a></p>
-        <!-- </div> -->
         </div>
   		  
 
@@ -74,8 +81,8 @@
             <br>
             <div class="col-md-5" style="background-color:lightblue">
               <h4>INGREDIENTS FOR 4 PERSONS</h4>
-              <hr>
-                <table style="width:100%" class="table">
+              <br>
+                <table style="width:100%;" class="table table-condensed">
                   <tr>
                     <td>2 tbs</td>
                     <td>Olive oil</td> 
@@ -88,9 +95,17 @@
                     <td>SEK</td>
                     <td>10,00</td>
                   </tr>
+                  <tr>
+                    <td>90 g</td>
+                    <td>pack rosciutto</td> 
+                    <td>SEK</td>
+                    <td>15,00</td>
+                  </tr>
                 </table>
-              <hr>
-              <a href="index_p4.html"><button type="button" class="btn btn-default"> Confirm dish</button></a>
+                <hr><p class='pull-right' style='padding-right:28px'>22.00</p>
+                <p>
+              <a href="index_p4.html"><button type="button" class="btn btn-default"> Confirm dish</button></a><br>
+            </p>
             </div>
           </div><!-- /.row -->
         </div><!-- /col-md-9 -->

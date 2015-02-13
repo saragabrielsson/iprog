@@ -18,7 +18,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="#">HOMELETTE</a>
+          <a class="navbar-brand" href="index_p1.html">HOMELETTE</a>
           <p class="navbar-text"><i>From the best chefs in the world directly into your kitchen</i></p>        
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -27,45 +27,40 @@
     </nav>
 
     <div class="container">
-
-
   		<div class="row">
   		  <div class="col-md-3">
-  <!--  <div class="jumbotron"> -->
           <h3>My dinner</h3>
           <div id="exampleView">
-            <div class="row">
-              People: <span id="numberOfGuests">3</span>
-
-              <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-              <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-            </div>
+            People: 
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+           
           </div>
-
           <br>
-
           <div class="panel panel-default">
           <!-- Default panel contents -->
-          <div class="panel-heading">Panel heading</div>
-
+          <div class="panel-heading">Dish Name<p class="pull-right">Cost</p></div>            
             <!-- Table -->
             <table class="table">
-              <p>Dish Name</p>
-              <p>Pending</p>
+                  <tr>
+                    <td>Pending</td>
+                    <td></td>
+                    <td class='pull-right'>0.00</td>
+                  </tr>                 
             </table>
+            <hr> 
+            <div class='pull-right' style='padding-right:7px'>SEK 0.00</div><br>
           </div>
-          
-
-
-
           <br>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Confirm dinner</a></p>
-
-        <!-- </div> -->
         </div>
   		  
         <div class="col-md-9">
-        
           <div class="jumbotron">
             <h3>Select dish</h3>
             <div class="row">
@@ -77,17 +72,18 @@
                   </span>
                 </div><!-- /input-group -->
               </div><!-- /.col-lg-6 -->
+
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                  Main
+                  Select a type
                   <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <ul class="dropdown-menu center" role="menu" aria-labelledby="dropdownMenu1">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Starters</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Main</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dessert</a></li>
                 </ul>
-              </div>
+              </div><!-- /.dropdown -->
             </div><!-- /.row -->
           </div><!-- /jumbotron -->
 
