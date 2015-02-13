@@ -10,50 +10,159 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
     <style type="text/css">
-    	body {
-  			padding-top: 50px;
-  			font-family: Verdana, Sans-serif;
-		}
-	</style>
-
+      body {
+        padding-top: 50px;
+        font-family: Lobster, Sans-serif;
+      }
+    </style>
   </head>
+
   <body>
-  	 <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
           <a class="navbar-brand" href="#">HOMELETTE</a>
+          <p class="navbar-text"><i>From the best chefs in the world directly into your kitchen</i></p>        
         </div>
         <div id="navbar" class="collapse navbar-collapse">
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-	<div class="container">
-		<div class="jumbotron">
-		  <h1>A home dinner service</h1>
-		  <p>...</p>
-		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Create a new dinner</a></p>
-		</div>
+
+    <div class="container">
 
 
-		<div class="row">
-		  <div class="col-md-4">.col-md-8</div>
-		  <div class="col-md-8">.col-md-4</div>
-		</div>
+  		<div class="row">
+  		  <div class="col-md-3">
+  <!--  <div class="jumbotron"> -->
+          <h3>My dinner</h3>
+          <div id="exampleView">
+            <div class="row">
+              People: <span id="numberOfGuests">3</span>
 
-		<h1>Dinner planner</h1>
-		<div id="exampleView">
-			<div>
-				Number of guests: <span id="numberOfGuests"></span>
-			</div>
-			<div>
-          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			</div>
-		</div>
-	</div>
+              <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+              <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Panel heading</div>
+
+            <!-- Table -->
+            <table class="table">
+              <p>Dish Name</p>
+              <p>Pending</p>
+            </table>
+          </div>
+          
+
+
+
+          <br>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Confirm dinner</a></p>
+
+        <!-- </div> -->
+        </div>
+  		  
+        <div class="col-md-9">
+        
+          <div class="jumbotron">
+            <h3>Select dish</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Dropdown
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /jumbotron -->
+
+          <div class="row">
+            <div class="col-md-3">    
+              <div class="thumbnail">
+                <img src="..." alt="...">
+                <p><a href="#" class="btn btn-default" role="button" style="align-center">Button</a></p>
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">    
+              <div class="thumbnail">
+                <img src="..." alt="...">
+                <p><a href="#" class="btn btn-default" role="button" style="align-center">Button</a></p>
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">    
+              <div class="thumbnail">
+                <img src="..." alt="...">
+                <p><a href="#" class="btn btn-default" role="button" style="align-center">Button</a></p>
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">    
+              <div class="thumbnail">
+                <img src="..." alt="...">
+                <p><a href="#" class="btn btn-default" role="button" style="align-center">Button</a></p>
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">    
+              <div class="thumbnail">
+                <img src="..." alt="...">
+                <p><a href="#" class="btn btn-default" role="button" style="align-center">Button</a></p>
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div><!-- /.row -->
+
+        </div><!-- /col-md-9 -->
+
+		</div> <!-- /container -->
+		
+
+
+
+
+
+    </div>
 
 
     <!-- jQuery -->

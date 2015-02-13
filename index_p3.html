@@ -10,50 +10,102 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 
     <style type="text/css">
-    	body {
-  			padding-top: 50px;
-  			font-family: Verdana, Sans-serif;
-		}
-	</style>
-
+      body {
+        padding-top: 50px;
+        font-family: Lobster, Sans-serif;
+      }
+    </style>
   </head>
+
   <body>
-  	 <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
           <a class="navbar-brand" href="#">HOMELETTE</a>
+          <p class="navbar-text"><i>From the best chefs in the world directly into your kitchen</i></p>        
         </div>
         <div id="navbar" class="collapse navbar-collapse">
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-	<div class="container">
-		<div class="jumbotron">
-		  <h1>A home dinner service</h1>
-		  <p>...</p>
-		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Create a new dinner</a></p>
-		</div>
+
+    <div class="container">
 
 
-		<div class="row">
-		  <div class="col-md-4">.col-md-8</div>
-		  <div class="col-md-8">.col-md-4</div>
-		</div>
+  		<div class="row">
+  		  <div class="col-md-3">
+  <!--  <div class="jumbotron"> -->
+          <h3>My dinner</h3>
+          <div id="exampleView">
+            <div class="row">
+              People: <span id="numberOfGuests">3</span>
 
-		<h1>Dinner planner</h1>
-		<div id="exampleView">
-			<div>
-				Number of guests: <span id="numberOfGuests"></span>
-			</div>
-			<div>
-          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			</div>
-		</div>
-	</div>
+              <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+              <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+            </div>
+          </div>
+          <br>
+          <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Panel heading</div>
+            <!-- Table -->
+            <table class="table">
+              <p>Dish Name</p>
+              <p>Pending</p>
+            </table>
+          </div>
+          <br>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Confirm dinner</a></p>
+        <!-- </div> -->
+        </div>
+  		  
+
+
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Lasagne</h2>
+              <img src="images/lasagne.png" class="img-responsive" alt="Responsive image">
+              <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<em>            
+              <br>
+              <br>
+              <button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back to Select Dish</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-5" style="background-color:yellow">
+              <h3>Ingridients for 4 persons</h3>
+              <hr>
+                <table style="width:100%" class="table">
+                  <tr>
+                    <td>2 tbs</td>
+                    <td>Olive oil</td> 
+                    <td>SEK 0.20</td>
+                  </tr>
+                  <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td> 
+                    <td>94</td>
+                  </tr>
+                </table>
+              <hr>
+              <button type="button" class="btn btn-default"> Confirm dish</button>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /col-md-9 -->
+
+		</div> <!-- /container -->
+		
+
+
+
+
+
+    </div>
 
 
     <!-- jQuery -->
